@@ -50,10 +50,10 @@ class Assist extends Component {
         const data = {
             id : props
         }
-        axios.post(`https://sleepy-bastion-25142.herokuapp.com/removenote`,data)
+        /* axios.post(`https://sleepy-bastion-25142.herokuapp.com/removenote`,data)
         .then(response => {
             console.log(response.data)
-        })
+        }) */
         console.log("The user wants to remove notes")
     }
     onSignoutClick(e) {
@@ -90,14 +90,14 @@ class Assist extends Component {
     }
     onRefreshClick(event){
         event.preventDefault()
-        axios.get(`https://sleepy-bastion-25142.herokuapp.com/allnotes`)
+        /* axios.get(`https://sleepy-bastion-25142.herokuapp.com/allnotes`)
         .then(response => {
             //console.log(response.data)
             this.setState({
                 notes : response.data
             })
             console.log(this.state.notes)
-        })
+        }) */
         console.log("The user wants to see all notes")
     }
     onSubmitClick(event){
@@ -106,11 +106,11 @@ class Assist extends Component {
         const note = {
             val : this.state.record,
         }
-        axios.post(`https://sleepy-bastion-25142.herokuapp.com/addnote`,note)
+        /* axios.post(`https://sleepy-bastion-25142.herokuapp.com/addnote`,note)
         .then(response => {
             console.log(response.data)
             this.onRefreshClick(event)
-        })
+        }) */
         console.log("The user wants to add a note")
     }
     onClearClick(event){

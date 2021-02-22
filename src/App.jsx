@@ -35,7 +35,7 @@ class App extends Component {
             username : this.state.username,
             password : this.state.password
         }
-        axios.post(`https://sleepy-bastion-25142.herokuapp.com/signin`,registered)
+        /* axios.post(`https://sleepy-bastion-25142.herokuapp.com/signin`,registered)
         .then(response => {
             console.log(response)
             if(response.status===200){
@@ -45,7 +45,7 @@ class App extends Component {
                   );
             }
             //axios.get("/me")
-        })
+        }) */
         console.log("THe user wants to signin")
         this.setState({
             username:'',

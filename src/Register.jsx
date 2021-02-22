@@ -41,8 +41,8 @@ class Register extends Component {
             email : this.state.email,
             password : this.state.password
         }
-        axios.post('https://sleepy-bastion-25142.herokuapp.com/signup',registered)
-        .then(response => console.log(response.data))
+        /* axios.post('https://sleepy-bastion-25142.herokuapp.com/signup',registered)
+        .then(response => console.log(response.data)) */
         console.log("The user wants to signup")
 
         this.setState({

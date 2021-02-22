@@ -49,7 +49,7 @@ class Todo extends Component {
         const data = {
             id : props
         }
-        axios.post(`https://sleepy-bastion-25142.herokuapp.com/removetodo`,data)
+        /* axios.post(`https://sleepy-bastion-25142.herokuapp.com/removetodo`,data)
         .then(response => {
             console.log(response.data)
         })
@@ -60,20 +60,20 @@ class Todo extends Component {
                 todo : response.data
             })
             console.log(this.state.todo)
-        }))
+        })) */
         console.log("The user wants to remove to do")
     }
 
     onRefreshClick(event){
         event.preventDefault()
-        axios.get(`https://sleepy-bastion-25142.herokuapp.com/alltodos`)
+        /* axios.get(`https://sleepy-bastion-25142.herokuapp.com/alltodos`)
         .then(response => {
             //console.log(response.data)
             this.setState({
                 todo : response.data
             })
             console.log(this.state.todo)
-        })
+        }) */
         console.log("The user wants to see all to dos")
     }
     onSubmitClick(event){
@@ -82,12 +82,12 @@ class Todo extends Component {
         const todo = {
             val : this.state.record,
         }
-        axios.post(`https://sleepy-bastion-25142.herokuapp.com/addtodo`,todo)
+        /* axios.post(`https://sleepy-bastion-25142.herokuapp.com/addtodo`,todo)
         .then(response => {
             console.log("Added")
             this.onClearClick(event)
             this.onRefreshClick(event)
-        })
+        }) */
         console.log("The user wants to add a to do")
     }
     
