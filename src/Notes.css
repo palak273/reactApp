@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    width: 100%;
+}
+.notes{
+    width: 100%;
+    position:absolute;
+    overflow:scroll;
+    height: 100%;
+    min-height: 100%;
+    background-color: #2F5233;
+    font-family: Arial;
+}
+.newnote{
+    display:block;
+    float:left;
+    text-align: center;
+    width:50%;
+    color: white;
+}
+
+.heading {
+    color:white;
+    font-size: 2em;
+    display:block;
+    padding: 20px;
+    margin:10px;
+}
+
+.recordbtn, .stopbtn, .clearbtn, .savebtn{
+    padding: 10px;
+    margin: 10px;
+}
+
+.note{
+    display:block;
+    width:80%;
+    border:2px solid;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+    height: 100%;
+    overflow:visible;
+  }
+
+.allnotes{
+    width: 50%;
+    display:block;
+    float:right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.table{
+    margin: 0 auto;
+}
+.oldnote{
+    padding:10px;
+    display:block;
+    float:left;
+    width: 90%;
+    height: 100px;
+    margin:30px 10px;
+}
+
+/*.ta {
+    height: 100px;
+}*/
+
+.crudbtn{
+    padding:3px;
+    margin:3px;
+    background-color: white;
+    color: black;
+}
+
+.del{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+}
